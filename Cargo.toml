@@ -1,0 +1,19 @@
+[package]
+name = "egui-inspect"
+version = "0.1.0"
+authors = ["Matthew Berger <matthewjordanberger@gmail.com>"]
+description = """
+egui-inspect is a rust derive macro that creates a set of egui ui databindings from arbitrary data structures. 
+"""
+homepage = "https://github.com/matthewjberger/egui-inspect"
+repository = "https://github.com/matthewjberger/egui-inspect"
+keywords = ["egui"]
+license = "MIT"
+edition = "2021"
+
+[dependencies]
+egui = "0.21.0"
+egui-inspect-derive = { path = "egui-inspect-derive" }
+
+[workspace]
+members = ["demo"]
